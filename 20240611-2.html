@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch5 table</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <style>
+        @media screen and (max-width:992px) {
+            .table-rwd thead{
+                display:none;
+            }
+            .table-rwd tbody tr{
+                display: block;
+                border: 5px solid var(--mycolor-6);
+                margin-top: 15px;
+            }
+            .table-rwd tbody tr td{
+                display: block;
+                overflow: hidden;
+            }
+            .table-rwd tbody tr td::before{
+                content: attr(data-th)" : ";
+                color: brown;
+                /* font-size: 20px; */
+                font-weight: bolder;
+                display: block;
+                float: left;
+                width: 6em;
+                text-align: right;
+                padding-right: 1em;
+            }
+            .table-rwd tbody tr td span.table-col{
+                display: block;
+                float: left;
+                width: calc(100%-6em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table table-rwd">
+            <thead class="table-dark">
+                <tr>
+                    <th width="5%">商品編號</th>
+                    <th width="5%">商品名稱</th>
+                    <th width="2%">商品圖片</th>
+                    <th width="5%">商品價格</th>
+                    <th width="5%">商品數量</th>
+                    <th width="60%">商品備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="商品編號"> <span class="table-col">001</span></td>
+                    <td data-th="商品名稱"><span class="table-col">蛋糕001</span></td>
+                    <td data-th="商品圖片"><span class="table-col"><img src="images/deva-williamson-S2jw81lfrG0-unsplash.jpg" width="300px" alt=""></span></td>
+                    <td data-th="商品價格">99元</td>
+                    <td data-th="商品數量"><span class="table-col">10個</span></td>
+                    <td data-th="商品備註"><span class="table-col">供應學會打算連續接受綜合鄉民當然那麼多道路，保障新型，之前。</span></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>蛋糕002</td>
+                    <td><img src="images/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg" width="300px" alt=""></td>
+                    <td>99元</td>
+                    <td>10個</td>
+                    <td>廣播歌詞尊重好處開口室內公開符合做好日韓，能在版本讀者富岡召開第二次區域基隆尋求，娛樂充分，一直試。</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>蛋糕003</td>
+                    <td><img src="images/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg" width="300px" alt=""></td>
+                    <td>99元</td>
+                    <td>10個</td>
+                    <td>廣播歌詞尊重好處開口室內公開符合做好日韓，能在版本讀者富岡召開第二次區域基隆尋求，娛樂充分，一直試。</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>蛋糕004</td>
+                    <td><img src="images/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg" width="300px" alt=""></td>
+                    <td>99元</td>
+                    <td>10個</td>
+                    <td>廣播歌詞尊重好處開口室內公開符合做好日韓，能在版本讀者富岡召開第二次區域基隆尋求，娛樂充分，一直試。</td>
+                </tr>
+            </tbody>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

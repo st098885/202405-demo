@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食.cuisine-產品細節</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <i class="fa-solid fa-cloud"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="20240701-2.html"><i class="fa-solid fa-house"></i>首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="20240701-3.html"><i class="fa-brands fa-apple"></i>關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="20240701-4.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-cart-shopping"></i>產品介紹
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="20240701-4.html">美食</a></li>
+                            <li><a class="dropdown-item" href="20240702-1.html">簡餐</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled"><i class="fa-solid fa-filter"></i>Disabled</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <div class="banner bg-cover d-none d-md-block" style="height: 260px; background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(228, 210, 7, 0.3)), url(images/casey-lee-awj7sRviVXo-unsplash.jpg);"></div>
+    
+    <div class="container">
+      <div class="h3 fw-900 text-danger my-3">|產品細節<small class="text-muted">Product details</small></div>
+      <div class="row">
+        <div class="col-md-8">
+          <img src="images/chad-montano-eeqbbemH9-c-unsplash.jpg" id="imgFull" class="img-fluid" alt="">
+          <div>
+            <ul class="list-unstyled d-flex justify-content-between flex-nowrap overflow-auto my-3">
+              <li>
+                <img class="bg-cover" onfocus="" onclick="changeImg('01')" src="images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('02')" src="images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('03')" src="images/brooke-lark--F_5g8EEHYE-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('04')" src="images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('lava001')" src="images/emiliano-vittoriosi-OFismyezPnY-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('lava006')" src="images/casey-lee-awj7sRviVXo-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('glacier003')" src="images/alex-munsell-auIbTAcSH6E-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+              <li>
+                <img class="bg-cover" onclick="changeImg('glacier005')" src="images/emy-XoByiBymX20-unsplash.jpg" alt="" style="height: 100px; cursor: pointer;">
+              </li>
+            </ul>
+          </div>
+          <!-- 橫向選單 -->
+        </div>
+        <div class="col-md-4">
+          <div class="h3">鬆餅</div>
+          <div class="h3">價格: 99元/片</div>
+          <div class="h3">原料: 
+            <span class="text-bg-danger badge fw-500">麵粉</span>
+            <span class="text-bg-warning badge fw-500">奶粉</span>
+            <span class="text-bg-success badge fw-500">奶油</span>
+          </div>
+          <div class="card-text h3 fw-500 mt-2">簡介: <span class="fw-400">不能下載不停我有字。</span></div>
+          <div class="my-3">
+            <label for="" class="form-label">數量</label>
+            <input type="number" class="form-control" min="1" max="100" value="10">
+          </div>
+          <button class="btn btn-danger w-100 mt-3">確認訂購</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="my-3 py-2 text-center text-bg-dark fw-900 fs-4">雲端技術班製作 2024.07</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      function changeImg(num){
+        document.getElementById('imgFull').src="images/" + num + ".jpg";
+      }
+    </script>
+  </body>
+</html>
